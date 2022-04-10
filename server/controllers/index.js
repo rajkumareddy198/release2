@@ -48,6 +48,11 @@ module.exports.displayLoginPage = (req, res, next) => {
     }
 }
 
+module.exports.displayThankyou = (req, res, next) => {
+    // check if the user is already logged in
+    res.render('book/thankyou', { title: 'Thank you', displayName: req.user ? req.user.displayName : ''});
+}
+
 module.exports.processLoginPage = (req, res, next) => {
     passport.authenticate('local',
     (err, user, info) => {

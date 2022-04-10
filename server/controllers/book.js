@@ -7,6 +7,23 @@ let jwt = require('jsonwebtoken');
 // create a reference to the model
 let Book = require('../models/book');
 
+
+// Gets a movie by id and renders the details page.
+module.exports.displaySurvey = (req, res, next) => {
+    
+    let id = req.params.id;
+
+
+            //show the edit view
+    res.render('book/survey', {
+                title: 'Survey',
+                
+                })
+    
+            
+}
+
+
 module.exports.displayBookList = (req, res, next) => {
     Book.find((err, bookList) => {
         if(err)
