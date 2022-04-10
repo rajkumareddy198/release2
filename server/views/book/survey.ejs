@@ -1,0 +1,74 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<main class="container">
+<div class="mx-0 mx-sm-auto">
+    <div class="card">
+      <div class="card-body">
+        <div class="text-center">
+          <i class="far fa-file-alt fa-4x mb-3 text-primary"></i>
+          <p>
+            <strong>Welcome to Our Survey</strong>
+          </p>
+          <p>
+            <strong>How satisfied are you with our service?</strong>
+          </p>
+        </div>
+  
+        <hr />
+  
+        <form class="px-4" action="">
+          <p class="text-center"><strong>Your rating:</strong></p>
+  
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
+            <label class="form-check-label" for="radio2Example1">
+              Very good
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
+            <label class="form-check-label" for="radio2Example2">
+              Good
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example3" />
+            <label class="form-check-label" for="radio2Example3">
+              Medicore
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
+            <label class="form-check-label" for="radio2Example4">
+              Bad
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example5" />
+            <label class="form-check-label" for="radio2Example5">
+              Very bad
+            </label>
+          </div>
+  
+        </form>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Give us your feedback</label>
+        <textarea class="form-control" id="feedback" rows="3"></textarea>
+      </div>
+
+
+      <div class="card-footer text-end">
+        <a class="btn btn-primary" href="/thankyou" role="button">Submit</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>

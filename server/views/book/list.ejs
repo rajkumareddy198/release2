@@ -53,7 +53,11 @@
                                 <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
                          <% } else { %>
-                            <td class="text-center col-2"><%= BookList[count].name %></td>
+                            <td class="text-center col-2">
+                                <a href="/book-list/survey/<%= BookList[count]._id %>">
+                                <%= BookList[count].name %>
+                                </a>
+                            </td>
                             <td class="text-center col-2"><%= BookList[count].type %></td>
                             <td class="text-center col-2"><%= BookList[count].sdate %></td>
                             <td class="text-center col-2"><%= BookList[count].edate %></td>     
