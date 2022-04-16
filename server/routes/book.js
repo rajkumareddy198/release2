@@ -41,6 +41,6 @@ router.post('/edit/:id',requireAuth, bookController.processEditPage);
 /* GET to perform  Deletion - DELETE Operation */
 router.get('/delete/:id',requireAuth, bookController.performDelete);
 
-router.get('/survey/:id', bookController.displaySurvey);
+router.get('/survey/:id',bookController.displaySurvey);
 
 module.exports = router;

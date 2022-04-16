@@ -22,7 +22,8 @@
                         <th class="text-center col-2">Survey Type</th>
                         <th class="text-center col-2">Start Date</th>
                         <th class="text-center col-2">End Date</th>
-                        <th class="col-4">Description</th>
+                        <th class="col-2">Description</th>
+                        <th class="text-center col-1"></th>
                         <th class="text-center col-1"></th>
                         <th class="text-center col-1"></th>
                     <% } else { %>
@@ -30,7 +31,7 @@
                         <th class="text-center col-2">Survey Type</th>
                         <th class="text-center col-2">Start Date</th>
                         <th class="text-center col-2">End Date</th>
-                        <th class="col-4">Description</th>
+                        <th class="col-2">Description</th>
                     <% } %>
                 </tr>
 
@@ -43,7 +44,12 @@
                             <td class="text-center col-2"><%= BookList[count].type %></td>
                             <td class="text-center col-2"><%= BookList[count].sdate %></td>
                             <td class="text-center col-2"><%= BookList[count].edate %></td>     
-                            <td class="col-4"><%= BookList[count].description %></td>       
+                            <td class="col-2"><%= BookList[count].description %></td>   
+                            <td class="text-center col-1">
+                                <a href="/book-list/survey/<%= BookList[count]._id %>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-pencil-alt"></i>Take Survey</a>
+                            </td>
+                            
                             <td class="text-center col-1">
                                 <a href="/book-list/edit/<%= BookList[count]._id %>" class="btn btn-primary btn-sm">
                                 <i class="fas fa-pencil-alt"></i> Edit</a>
